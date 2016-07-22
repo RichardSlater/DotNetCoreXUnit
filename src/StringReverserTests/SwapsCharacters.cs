@@ -1,17 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Xunit;
+﻿using Xunit;
 using StringReverser;
 
-namespace StringReverserTests
-{
-    public class SwapsCharacters
-    {
+namespace StringReverserTests {
+    public class SwapsCharacters {
         [Fact]
-        public void TwoDigitSwap()
-        {
+        public void TwoDigitSwap() {
             const string original = "ab";
             var reverser = new Engine();
             var result = reverser.Reverse(original);
